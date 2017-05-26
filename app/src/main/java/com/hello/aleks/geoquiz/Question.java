@@ -7,6 +7,7 @@ package com.hello.aleks.geoquiz;
 public class Question {
     private int mTextResId;
     private boolean mAnswerTrue;
+    private boolean mIsCheated;
 
     public Question(int mTextResId, boolean mAnswerTrue) {
         this.mTextResId = mTextResId;
@@ -27,5 +28,13 @@ public class Question {
 
     public void setAnswerTrue(boolean answerTrue) {
         mAnswerTrue = answerTrue;
+    }
+
+    public boolean isCheated() {
+        return mIsCheated;
+    }
+
+    public void setCheated(boolean cheated) {
+        mIsCheated = cheated;
     }
 }
